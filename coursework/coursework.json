@@ -1,0 +1,58 @@
+[
+    {
+        "model": "api.teacher",
+        "pk": 1,
+        "fields": {
+            "name": "Satoshi Haramoto",
+            "email": "satoshi8haramoto@gmail.com"
+        }
+    },
+    {
+        "model": "api.teacher",
+        "pk": 2,
+        "fields": {
+            "name": "Kurama Sensei",
+            "email": "kurama2sensei@gmail.com"
+        }
+    },
+    {
+        "model": "api.student",
+        "pk": 1,
+        "fields": {
+            "rollno": 96,
+            "name": "Shouvit",
+            "email": "shaw8wit@gmail.com",
+            "mentor": [1]
+        }
+    },
+    {
+        "model": "api.student",
+        "pk": 2,
+        "fields": {
+            "rollno": 96,
+            "name": "Pradhan",
+            "email": "pradhan@gmail.com",
+            "mentor": [2]
+        }
+    },
+    {
+        "model": "api.subject",
+        "pk": 1,
+        "fields": {
+            "name": "Computer Networks",
+            "subcode": "CS301",
+            "teachers": [1],
+            "students": [1, 2]
+        }
+    },
+    {
+        "model": "api.subject",
+        "pk": 1,
+        "fields": {
+            "name": "Operating Systems",
+            "subcode": "CS204",
+            "teachers": [1, 2],
+            "students": [2]
+        }
+    }
+]
